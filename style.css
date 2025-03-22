@@ -9,6 +9,14 @@ body {
     margin: 0;
 }
 
+h2 {
+    font-size: 3em;
+}
+
+label {
+    font-size: 1.5em;
+}
+
 .calculator {
     background: #3a3f4b;
     padding: 20px;
@@ -27,15 +35,18 @@ input {
 }
 
 button {
-    padding: 10px 15px;
+    padding: 1em 1.5em;
+    margin: 1em 1.5em;
     border: none;
     background: #61dafb;
     color: black;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1.5em;
 }
 
 .result {
     margin-top: 15px;
+    font-size: 1.5em;
 }

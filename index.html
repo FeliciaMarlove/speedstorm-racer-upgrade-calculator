@@ -2,81 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><!DOCTYPE html>
-        <html lang="en">
-        <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Speedstorm Racer Upgrade Calculator</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #282c34;
-            color: white;
-            margin: 0;
-        }
-        .calculator {
-            background: #3a3f4b;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        input {
-            width: 80px;
-            padding: 5px;
-            margin: 10px;
-            border-radius: 5px;
-            border: none;
-            text-align: center;
-        }
-        button {
-            padding: 10px 15px;
-            border: none;
-            background: #61dafb;
-            color: black;
-            font-weight: bold;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .result {
-            margin-top: 15px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedstorm Racer Upgrade Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="calculator">
-    <h2>Speedstorm Upgrade Calculator</h2>
-    <label>Current Level: <input type="number" id="currentLevel" min="1"></label>
+    <h2>Speedstorm Racer Upgrade Calculator</h2>
+    <label>Current Racer Level: <input type="number" id="currentLevel" min="1"></label>
     <br>
-    <label>Desired Level: <input type="number" id="desiredLevel" min="1"></label>
+    <label>Desired Racer Level: <input type="number" id="desiredLevel" min="1"></label>
     <br>
     <button onclick="calculateResources()">Calculate</button>
     <div class="result">
-        <p>Racer Shards: <span id="shards">0</span></p>
-        <p>Upgrade Coins: <span id="coins">0</span></p>
+        You will need:
+        <p><span id="shards">0</span> Racer Shards</p>
+        <p><span id="coins">0</span> Upgrade Coins</p>
     </div>
 </div>
-<script>
-    function calculateResources() {
-        // Placeholder function for your calculations
-        let currentLevel = document.getElementById("currentLevel").value;
-        let desiredLevel = document.getElementById("desiredLevel").value;
-        
-        // You will implement the actual logic here
-        document.getElementById("shards").textContent = "?";
-        document.getElementById("coins").textContent = "?";
-    }
-</script>
-</body>
-</html>
-</title>
-</head>
-<body>
-
+<script src="calculator.js"></script>
 </body>
 </html>
